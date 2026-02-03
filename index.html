@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Captação de Leads</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>Transforme sua ideia em resultado!</h1>
+      <p>Cadastre-se agora e receba conteúdos exclusivos para crescer seu negócio.</p>
+      <button onclick="scrollToForm()" class="btn">Quero Receber!</button>
+    </div>
+  </header>
+
+  <!-- BENEFÍCIOS -->
+  <section class="features">
+    <div class="container">
+      <h2>O que você vai receber:</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <h3>Guia Prático</h3>
+          <p>Passo a passo de estratégias que funcionam.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Dicas Exclusivas</h3>
+          <p>Conteúdo testado por especialistas do mercado.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Suporte</h3>
+          <p>Respostas para dúvidas e sugestões personalizadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>O que nossos usuários dizem:</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>"Segui o conteúdo e consegui dobrar minhas vendas!"</p>
+          <strong>- Ana S.</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>"Simples e direto, aprendi em dias o que demoraria meses."</p>
+          <strong>- Carlos M.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section class="lead-form" id="leadFormSection">
+    <div class="container">
+      <h2>Cadastre-se e receba agora</h2>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" required placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="seu@email.com">
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="successMsg" class="success-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Landing Page Conversão. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
